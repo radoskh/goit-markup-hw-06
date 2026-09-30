@@ -284,7 +284,7 @@
 
 @media only screen and (min-width: 768px) {
   .footer-form-input {
-    width: 100%;
+    width: 264px;
   }
 }
 
@@ -295,7 +295,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 0;
-    width: 100%;
+    width: 264px;
   }
 }
 
