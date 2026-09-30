@@ -1,7 +1,19 @@
 .features {
   background: #fff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .features {
+    padding: 96px 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .features .container {
@@ -11,24 +23,84 @@
 }
 .features-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
 }
+
+@media only screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .features-item {
-  width: 264px;
+  width: 288px;
 }
+
+@media only screen and (min-width: 768px) {
+  .features-item {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    width: 264px;
+  }
+}
+
 .features-li-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
 }
+
+@media only screen and (min-width: 768px) {
+  .features-li-title {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-li-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    text-align: start;
+  }
+}
+
 .features-text {
   color: #434455;
 
   margin-top: 8px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-text {
+    font-weight: 400;
+  }
 }
 
 .features-icon {
@@ -39,18 +111,24 @@
 }
 
 .features-decor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 0;
+  display: none;
+}
 
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+@media only screen and (min-width: 1158px) {
+  .features-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0;
 
-  background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
 
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
+    background: #f4f4fd;
+
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
 }

@@ -1,22 +1,7 @@
 .header {
-  padding: 16px;
-  /* padding-top: 0; */
-  /* padding-bottom: 0; */
+  padding-top: 0;
+  padding-bottom: 0;
   border-bottom: 1px solid #e7e9fc;
-}
-
-@media only screen and (min-width: 768px) {
-  .header {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .header {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 
 .header .container {
@@ -38,7 +23,6 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .header-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -50,13 +34,6 @@
 }
 .header-nav {
 }
-
-@media only screen and (max-width: 767.98px) {
-  .header-nav {
-    display: none;
-  }
-}
-
 .header-list {
   display: flex;
   align-items: flex-start;
@@ -101,13 +78,6 @@
 .header-adress {
   margin-left: auto;
 }
-
-@media only screen and (max-width: 767.98px) {
-  .header .header-adress {
-    display: none;
-  }
-}
-
 .header-adress-list {
   display: flex;
   align-items: center;
@@ -115,15 +85,6 @@
   flex-direction: row;
   gap: 40px;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .header-adress-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-
 .header-adress-item {
 }
 .header-adress-link {

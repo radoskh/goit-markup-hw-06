@@ -51,35 +51,15 @@ address {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 375px;
   margin: 0 auto;
-  padding: 0 15px;
 
-  /* max-width: 1158px; */
+  max-width: 1158px;
+  padding: 0 15px;
 
   outline: 2px solid red;
   outline-offset: -2px;
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 16px;
-    max-width: 768px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .container {
-    padding: 0 15px;
-    max-width: 1158px;
-  }
-}
-
 img {
   display: block;
-}
-
-.hide {
-  display: none !important;
 }

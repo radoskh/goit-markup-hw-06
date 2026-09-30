@@ -1,14 +1,8 @@
 .team {
   background: #f4f4fd;
 
-  padding: 96px 0;
-}
-
-@media only screen and (min-width: 1158px) {
-  .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team .container {
@@ -29,30 +23,11 @@
 }
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
   gap: 24px;
-  row-gap: 72px;
 }
-
-@media only screen and (min-width: 768px) {
-  .team-list {
-    row-gap: 64px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .team-list {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 24px;
-  }
-}
-
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
@@ -61,12 +36,6 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 0;
 }
 .team-pic {
 }
@@ -93,7 +62,6 @@
   flex-direction: row;
   gap: 24px;
 }
-
 .team-socials-item {
   margin-top: 8px;
 }
