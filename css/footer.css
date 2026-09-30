@@ -26,6 +26,7 @@
     justify-content: flex-start;
     flex-direction: row;
     column-gap: 24px;
+    row-gap: 72px;
     padding: 0 108px;
   }
 }
@@ -190,6 +191,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 16px;
+
+    width: 453px;
   }
 }
 
@@ -202,6 +205,8 @@
     gap: 16px;
 
     margin-left: auto;
+
+    /* width: 453px; */
   }
 }
 
@@ -230,6 +235,8 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 24px;
+
+    width: 453px;
   }
 }
 
@@ -240,6 +247,8 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 24px;
+
+    /* width: 453px; */
   }
 }
 
@@ -273,6 +282,12 @@
   transition-property: border-color;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .footer-form-input {
     display: flex;
@@ -280,6 +295,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 0;
+    width: 100%;
   }
 }
 
