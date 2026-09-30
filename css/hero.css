@@ -15,7 +15,7 @@
     ),
     image-set(
       url("../images/Hero/hero-bg_mob.jpg") 1x,
-      url(../images//Hero/hero-bg@2x_mob.jpg) 2x
+      url(../images/Hero/hero-bg@2x_mob.jpg) 2x
     );
   background-repeat: no-repeat;
   background-position: center;

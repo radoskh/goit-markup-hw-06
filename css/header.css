@@ -1,5 +1,5 @@
 .header {
-  padding: 16px;
+  /* padding: 16px; */
   /* padding-top: 0; */
   /* padding-bottom: 0; */
   border-bottom: 1px solid #e7e9fc;
@@ -22,6 +22,7 @@
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-link {
   font-family: "Raleway", sans-serif;
@@ -32,11 +33,24 @@
   text-transform: uppercase;
   color: #2e2f42;
   margin-right: 76px;
-  margin-left: 15px;
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-link {
+    margin-right: 76px;
+  }
 }
 
 .header-web {
@@ -129,10 +143,72 @@
 .header-adress-link {
   color: #434455;
 
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #434455;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
+
+@media only screen and (min-width: 1158px) {
+  .header-adress-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+}
+
 .header-adress-link:hover,
 .header-adress-link:focus {
   color: #404bbf;
+}
+
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0;
+
+  padding: 0;
+  /* background: #e7e9fc; */
+
+  /* border: 1px solid rgba(46, 47, 66, 0.4); */
+  border: none;
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+
+  margin-left: auto;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+.mobile-menu .mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.mobile-menu .mobile-menu-btn-icon {
+  color: #2e2f42;
+}
+.mobile-menu-btn:hover .mobile-menu-btn-icon,
+.mobile-menu-btn:focus .mobile-menu-btn-icon {
+  color: white;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+  background: #404bbf;
 }
